@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Homework_10</string>
+    <string name="following">Following</string>
+    <string name="followers">Followers</string>
+    <string name="number_of_repositories">Repositories :  </string>
+    <string name="gists">Gists :  </string>
+    <string name="user_url">Url :</string>
+</resources>
