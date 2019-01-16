@@ -189,4 +189,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/load_failed_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/load_failed"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/medium_text"
+        android:visibility="gone" />
 </RelativeLayout>

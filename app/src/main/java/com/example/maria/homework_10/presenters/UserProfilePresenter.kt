@@ -12,13 +12,15 @@ class UserProfilePresenter(
 ) {
 
     fun fetchUserProfile(city: String) {
-        repository.getData(city).enqueue(object : Callback<UserResponse> {
+        repository.getProfileData(city).enqueue(object : Callback<UserResponse> {
             override fun onResponse(
                     call: Call<UserResponse>,
                     response: Response<UserResponse>
             ) {
                 if(response.body()!=null)
                     view.showUser(response.body()!!)
+                else
+                    view.loadFailed()
             }
 
             override fun onFailure(call: Call<UserResponse>, t: Throwable) {

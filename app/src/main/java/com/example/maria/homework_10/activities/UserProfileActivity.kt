@@ -33,25 +33,20 @@ class UserProfileActivity : AppCompatActivity(), UserProfileView {
 
     override fun showUser(user: UserResponse) {
         login_view.text = user.login
-
         if(user.name != null)
             name_view.text = user.name
-
         url_view.text= user.html_url
-
         followers_view.text = user.followers.toString()
-
         following_view.text = user.following.toString()
-
         if(user.avatar_url != null)
             Glide.with(this).load(user.avatar_url).into(profile_image)
-
         repositories_view.text = user.public_repos.toString()
-
         gists_view.text = user.public_gists.toString()
-
         loading_indicator.visibility = View.GONE
-
         user_info_view.visibility = View.VISIBLE
+    }
+    override fun loadFailed() {
+        loading_indicator.visibility = View.GONE
+        load_failed_view.visibility = View.VISIBLE
     }
 }

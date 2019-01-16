@@ -5,4 +5,5 @@
     <string name="number_of_repositories">Repositories :  </string>
     <string name="gists">Gists :  </string>
     <string name="user_url">Url :</string>
+    <string name="load_failed">Load failed, please try again later!</string>
 </resources>

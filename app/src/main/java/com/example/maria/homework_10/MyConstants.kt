@@ -1,6 +1,6 @@
 package com.example.maria.homework_10
 
-class Constants {
+class MyConstants {
     companion object {
         val students = arrayOf(
                 "Ruslan Solodovnyk" to "banancheg007",

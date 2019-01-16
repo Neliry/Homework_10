@@ -1,5 +1,6 @@
 package com.example.maria.homework_10.repository
 
+import com.example.maria.homework_10.MyConstants
 import com.example.maria.homework_10.model.UserResponse
 import com.example.maria.homework_10.network.GithubService
 import retrofit2.Call
@@ -15,7 +16,11 @@ class Repository {
 
     private val openWeatherService = retrofit.create(GithubService::class.java)
 
-    fun getData(city: String): Call<UserResponse> {
+    fun getProfileData(city: String): Call<UserResponse> {
         return openWeatherService.getCurrentWeather(city)
+    }
+
+    fun getStudentsData(): Array<Pair<String, String>> {
+        return MyConstants.students
     }
 }
