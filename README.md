@@ -1,4 +1,4 @@
-# Homework_10
+# Using the GitHub API
 
 https://1drv.ms/u/s!AjPy-xC0DI2U3Qz3tlMCn9ZBUDnk
 
